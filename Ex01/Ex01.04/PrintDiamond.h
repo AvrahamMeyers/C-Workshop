@@ -3,6 +3,10 @@
 #include "PrintSpace.h"
 #include "PrintStar.h"
 
+/**
+* @file Prints a Diamond
+*/
+
 /// @brief prints a diamond of '*' with the given base size
 /// @param base Base length of the diamond
 void PrintDiamond(int base)

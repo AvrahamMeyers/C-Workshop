@@ -25,13 +25,13 @@ int main(int argc, char** argv)
 
             for (char *letter = argv[i]; *letter != '\0'; ++letter)
             {
-                if (*letter < 'a' || *letter > 'z')
-                {
-                    lower = false;
-                }
-                if (*letter < 'A' || *letter > 'Z')
+                if (*letter >= 'a' && *letter <= 'z')
                 {
                     upper = false;
+                }
+                if (*letter >= 'A' && *letter <= 'Z')
+                {
+                    lower = false;
                 }
             }
             if (upper)

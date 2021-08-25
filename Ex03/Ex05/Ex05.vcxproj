@@ -140,10 +140,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Ex03.05.c" />
+    <ClCompile Include="Transpose.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Ex03.05.h" />
+    <ClInclude Include="Transpose.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

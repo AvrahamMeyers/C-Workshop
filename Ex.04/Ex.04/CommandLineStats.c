@@ -19,11 +19,11 @@ int main(int argc, char** argv)
         {
             ++switch_counter;
         }
-        else 
+        else
         {
             bool upper = true, lower = true;
 
-            for (char *letter = argv[i]; *letter != '\0'; ++letter)
+            for (char* letter = argv[i]; *letter != '\0'; ++letter)
             {
                 if (*letter >= 'a' && *letter <= 'z')
                 {
@@ -46,12 +46,14 @@ int main(int argc, char** argv)
     }
 
     printf("the number of switches is: %d\n", switch_counter);
-    
+
     printf("the number of uppercase commands is: %d\n", uppercase_counter);
 
     printf("the number of lowercase commands is: %d\n", lowercase_counter);
 
-    printf("the number of commands that are neither uppercase nor lowercase is: %d\n", 
+    printf("the number of commands that are neither uppercase nor lowercase is: %d\n",
         argc - lowercase_counter - uppercase_counter - switch_counter);
 
+    
+    return 0;
 }

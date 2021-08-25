@@ -15,12 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Ex03.05.h">
+    <ClInclude Include="Transpose.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Ex03.05.c">
+    <ClCompile Include="Transpose.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -8,6 +8,8 @@ int main(void)
     printf("%s\n", string);
 
     WordReverse(string);
+
+    return 0;
 }
 
 void WordReverse(char* string) {

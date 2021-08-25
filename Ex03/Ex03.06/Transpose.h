@@ -14,7 +14,7 @@ int TransposeMatrix(numeric_t **matrix, numeric_t size);
 /// @param b the second value to be swapped 
 void swap(numeric_t *a, numeric_t *b);
 
-/// @brief prints a square matrix
+/// @brief prints a square matrix 
 /// @param matrix the matrix to be printed
 /// @param length the size of the length and width of the matrix
 void PrintMatrix(numeric_t **matrix, numeric_t length);

@@ -15,12 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Calculator.h">
+    <ClInclude Include="PrintBin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Calculator.c">
+    <ClCompile Include="PrintBin.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

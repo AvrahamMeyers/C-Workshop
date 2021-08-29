@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <malloc.h>
 #include <time.h>
 #include <stdlib.h>
 #include <string.h>
@@ -16,6 +15,10 @@ int main(void)
 		{"dawn", 23}
 	};
 
+	printf("the kennel before sorting:\n");
+
+	PrintDogs(kennel, SIZE);
+
 	SortDogs(kennel, SIZE, "name");
 
 	printf("the dogs sorted by name:\n");
@@ -27,7 +30,6 @@ int main(void)
 	printf("the dogs sorted by weight:\n");
 
 	PrintDogs(kennel, SIZE);
-
 
 	return 0;
 }
@@ -65,9 +67,11 @@ void SwapDogs(Dog* A, Dog* B)
 
 void PrintDogs(Dog kennel[], size_t size)
 {
-	printf("name:\t\tweight:\n");
+	int non = 10;
+
+	printf("name:%*sweight:\n", non - strlen("name:"), "");
 	for (size_t i = 0; i < size; ++i)
 	{
-		printf("%s\t%f\n", (kennel[i]).name, (kennel[i]).weight);
+		printf("%s%*s%f\n", (kennel[i]).name, non - strlen((kennel[i]).name), "", (kennel[i]).weight);
 	}
 }

@@ -1,4 +1,5 @@
 #pragma once
+#include <stdbool.h>
 
 /// @brief the type of the data of the list
 typedef int ListDataType;
@@ -16,6 +17,8 @@ typedef struct Node_t
 /// code 2: Empty list passed to method
 /// code 3: NULL node passed to method
 int ErrorCode = 0;
+
+bool CheckForError(int errorcode);
 
 /// @brief a struct for the list with a head node
 typedef struct List_t 

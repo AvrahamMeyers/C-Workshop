@@ -11,6 +11,10 @@ int main(void)
 
     PrintHex(&x, sizeof(x));
 
+    char y = 3;
+
+    PrintHex(&y, sizeof(y));
+
     return 0;
 }
 
@@ -18,7 +22,7 @@ void PrintHex(BytePointer address, size_t num_bytes)
 {
     for (size_t i = 0; i < num_bytes; ++i)
     {
-        printf("%X\n", address[i]);
+        printf("0x%02X\n", address[i]);
          
     }
 }

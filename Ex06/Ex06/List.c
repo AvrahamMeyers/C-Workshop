@@ -375,3 +375,30 @@ Node* Find(List* list, ListDataType value)
         return NULL;
     }
 }
+
+bool CheckForError(int errorcode)
+{
+    switch (errorcode)
+    {
+        
+        case 1:
+        {
+            printf("failed memory allocation - insufficient memory\n");
+            return false;
+        }
+        case 2:
+        {
+            printf("Empty list passed to method\n");
+            return false;
+        }
+        case 3:
+        {
+            printf("NULL node passed to method\n");
+            return false;
+        }
+        case 0:
+        {
+            return true;
+        }
+    }
+}

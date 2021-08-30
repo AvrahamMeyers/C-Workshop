@@ -11,6 +11,12 @@ typedef struct Node_t
     struct Node_t* prev;
 } Node;
 
+/// @brief a global variable for storing errors that occur in the program
+/// code 1: failed memory allocation - insufficient memory 
+/// code 2: Empty list passed to method
+/// code 3: NULL node passed to method
+int ErrorCode = 0;
+
 /// @brief a struct for the list with a head node
 typedef struct List_t 
 {

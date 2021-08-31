@@ -15,6 +15,10 @@ int main(void)
     scanf_s("%d %d", &size, &range);
 
     List* list = CreateList();
+    if (!CheckForError(ErrorCode))
+    {
+
+    }
 
     if (!list)
     {
@@ -383,17 +387,17 @@ bool CheckForError(int errorcode)
         
         case 1:
         {
-            printf("failed memory allocation - insufficient memory\n");
+            printf("ERROR: failed memory allocation - insufficient memory\n");
             return false;
         }
         case 2:
         {
-            printf("Empty list passed to method\n");
+            printf("ERROR: Empty list passed to method\n");
             return false;
         }
         case 3:
         {
-            printf("NULL node passed to method\n");
+            printf("ERROR: NULL node passed to method\n");
             return false;
         }
         case 0:

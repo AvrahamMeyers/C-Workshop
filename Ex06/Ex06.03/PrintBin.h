@@ -1,9 +1,9 @@
 #pragma once
 
-/// @brief using a macro for base 16
+/// @brief macro for base 16
 #define HexBase 16
 
-/// @brief a pointer to a single byte
+/// @brief pointer to a single byte
 typedef unsigned char* BytePointer;
 
 /// @brief prints the sequence of bytes pointed to address in binary

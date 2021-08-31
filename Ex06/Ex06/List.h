@@ -18,6 +18,9 @@ typedef struct Node_t
 /// code 3: NULL node passed to method
 int ErrorCode = 0;
 
+/// @brief checks for an error in the previous run method
+/// @param errorcode the error code 
+/// @return true if there was no error, false if there was an error
 bool CheckForError(int errorcode);
 
 /// @brief a struct for the list with a head node
@@ -99,4 +102,5 @@ Node* DeleteValue(List* list, ListDataType value);
 /// @param value the value to look for
 /// @return a pointer to the node in the list with the passed value
 Node* Find(List* list, ListDataType value);
+
 
